@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Magnetic Fridge Poetry Kit</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel = "icon" type = "image/gif" href = "images/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@400;600&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fridge-container">
+        <div class="instructions" id="instructions">
+            <h4><span class="lightbulb">💡</span> Digital Magnetic Poetry</h4>
+            <p>• Drag words from the tray to create poetry<br>
+            • Double-click magnets to remove them or simply drag it back<br>
+            • Click "New Words" for fresh inspiration<br>
+            • Use "Reset" to clear the fridge</p>
+        </div>
+        <div class="fridge" id="fridge"></div>
+    </div>
+
+    <div class="word-tray-container">
+        <div class="tray-header">
+            <h3>Word Magnets</h3>
+            <button class="shuffle-btn" onclick="shuffleWords()">New Words</button>
+        </div>
+        <div class="word-tray" id="wordTray"></div>
+        <div class="tray-footer">
+            <button class="save-btn" onclick="savePoem()">💾 Save</button>
+            <button class="reset-btn" onclick="resetFridge()">🔄 Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+        
+</body>
+</html>
